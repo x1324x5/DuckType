@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DuckType 码字鸭｜输入法中文上屏统计</title>
-  <meta name="description" content="DuckType 码字鸭是一款 Windows 本地中文输入统计工具，只统计输入法真正上屏的汉字，把写作节奏、词汇和报告留在你自己的电脑上。">
+  <title>DuckType 码字鸭｜只统计真正上屏的中文汉字</title>
+  <meta name="description" content="DuckType 码字鸭是一款 Windows 本地中文输入统计工具，只统计输入法真正上屏的汉字，把写作节奏、词汇、报告和回顾留在你自己的电脑上。">
   <meta property="og:title" content="DuckType 码字鸭">
   <meta property="og:description" content="只数真正上屏的中文汉字，本地保存，生成写作仪表盘、报告、词库和输入序列。">
   <meta property="og:image" content="assets/ducktype-dashboard.png">
@@ -19,6 +19,7 @@
       <span>DuckType <b>码字鸭</b></span>
     </a>
     <nav class="nav-links" aria-label="主要导航">
+      <a href="#gallery">界面</a>
       <a href="#features">功能</a>
       <a href="#privacy">隐私</a>
       <a href="#roadmap">路线图</a>
@@ -35,7 +36,7 @@
       <div class="hero-content">
         <p class="eyebrow">Windows 本地中文输入统计</p>
         <h1 id="hero-title">DuckType 码字鸭</h1>
-        <p class="hero-lede">它安静待在托盘里，只统计输入法真正上屏的汉字。拼音、英文、数字不入库，数据默认留在本机，再整理成写作节奏、词汇和报告。</p>
+        <p class="hero-lede">它安静待在托盘里，只统计输入法真正上屏的汉字。拼音、英文、数字不入库，数据默认留在本机，然后把零散输入整理成节奏、词汇、报告和回顾。</p>
         <div class="hero-actions" aria-label="主要操作">
           <a class="button primary" href="https://github.com/x1324x5/Duck-Type/releases" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
@@ -47,22 +48,26 @@
           </a>
         </div>
         <dl class="hero-stats" aria-label="产品要点">
-          <div><dt>只数中文</dt><dd>IME 提交后统计</dd></div>
-          <div><dt>本地优先</dt><dd>SQLite 保存在电脑上</dd></div>
-          <div><dt>报告可分享</dt><dd>卡片与长图导出</dd></div>
+          <div><dt>只数上屏</dt><dd>输入法提交后再统计</dd></div>
+          <div><dt>本地保存</dt><dd>SQLite 留在你的电脑上</dd></div>
+          <div><dt>可复盘</dt><dd>周报、长图、词库与序列</dd></div>
         </dl>
       </div>
     </section>
 
     <section class="proof band" aria-labelledby="proof-title">
       <div class="section-inner proof-grid">
-        <div>
+        <div class="proof-copy">
           <p class="section-kicker">真实仪表盘</p>
           <h2 id="proof-title">把“今天写了多少”变成一眼能读懂的节奏</h2>
-          <p>核心指标、每日趋势、活跃时段、应用分布、高频字词、词性、贡献热力图和完整报告都在一个本地窗口里。你可以加载演示数据先预览，也可以让它从今天开始安静记录。</p>
+          <p>核心指标、每日趋势、活跃时段、应用分布、高频字词、词性、贡献热力图和完整报告都在同一个本地窗口里。你可以先加载演示数据预览，也可以让它从今天开始安静记录。</p>
+          <img class="duck-decor decor-wave" src="assets/duck-wave.svg" alt="" loading="lazy">
         </div>
-        <figure class="screen">
-          <img src="assets/ducktype-dashboard.png" alt="DuckType 码字鸭仪表盘截图">
+        <figure class="screen pop-card">
+          <a class="zoomable" href="assets/ducktype-dashboard.png" data-lightbox="DuckType 主看板：近 7 天字数、速度、活跃时长、修改率与目标进度">
+            <img src="assets/ducktype-dashboard.png" alt="DuckType 码字鸭仪表盘截图">
+            <span class="zoom-hint">点击查看大图</span>
+          </a>
           <figcaption>浅色仪表盘：近 7 天字数、速度、活跃时长、修改率与目标进度。</figcaption>
         </figure>
       </div>
@@ -70,57 +75,91 @@
 
     <section class="gallery band alt" id="gallery" aria-labelledby="gallery-title">
       <div class="section-inner">
-        <p class="section-kicker">界面一览</p>
-        <h2 id="gallery-title">每一页都为中文写作者打磨</h2>
-        <p class="gallery-lede">看板之外，还有成就、报告、序列与词库——下面都是内置演示数据，不是真实输入。</p>
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">界面一览</p>
+            <h2 id="gallery-title">不是一张报表，而是一套可回看的写作现场</h2>
+          </div>
+          <img class="duck-decor decor-think" src="assets/duck-think.svg" alt="" loading="lazy">
+        </div>
+        <p class="gallery-lede">看板之外，还有成就、报告、序列与词库。下面截图均来自演示数据，用来展示 DuckType 会如何组织你的输入记录。</p>
         <div class="gallery-grid">
-          <figure><img src="assets/shot-fun.png" alt="趣味页：成就徽章、长词与最爱词" loading="lazy"><figcaption>趣味 · 成就徽章、长词与最爱词，让统计不至于太严肃</figcaption></figure>
-          <figure><img src="assets/shot-report.png" alt="报告页：卡片化叙事" loading="lazy"><figcaption>报告 · 把字数翻译成人话的卡片，可存成分享图</figcaption></figure>
-          <figure><img src="assets/shot-sequence.png" alt="输入序列：真实上屏片段时间线" loading="lazy"><figcaption>序列 · 真实上屏片段的时间线回放，可按应用与关键词筛选</figcaption></figure>
-          <figure><img src="assets/shot-lexicon.png" alt="词库占比饼图" loading="lazy"><figcaption>词库 · 各词语出现占比的饼图，点扇区即可跳到搜索</figcaption></figure>
+          <figure>
+            <a class="zoomable" href="assets/shot-fun.png" data-lightbox="趣味页：成就徽章、长词、最爱词和生僻字">
+              <img src="assets/shot-fun.png" alt="趣味页：成就徽章、长词与最爱词" loading="lazy">
+              <span class="zoom-hint">点击查看大图</span>
+            </a>
+            <figcaption>趣味 · 成就徽章、长词与最爱词，让统计不至于太严肃</figcaption>
+          </figure>
+          <figure>
+            <a class="zoomable" href="assets/shot-report.png" data-lightbox="报告页：卡片叙事、对比报告与分享图">
+              <img src="assets/shot-report.png" alt="报告页：卡片化叙事" loading="lazy">
+              <span class="zoom-hint">点击查看大图</span>
+            </a>
+            <figcaption>报告 · 把字数翻译成人话的卡片，可存成分享图</figcaption>
+          </figure>
+          <figure>
+            <a class="zoomable" href="assets/shot-sequence.png" data-lightbox="输入序列：真实上屏片段时间线">
+              <img src="assets/shot-sequence.png" alt="输入序列：真实上屏片段时间线" loading="lazy">
+              <span class="zoom-hint">点击查看大图</span>
+            </a>
+            <figcaption>序列 · 真实上屏片段的时间线回放，可按应用与关键词筛选</figcaption>
+          </figure>
+          <figure>
+            <a class="zoomable" href="assets/shot-lexicon.png" data-lightbox="词库页：各词库命中占比与词语报告">
+              <img src="assets/shot-lexicon.png" alt="词库占比饼图" loading="lazy">
+              <span class="zoom-hint">点击查看大图</span>
+            </a>
+            <figcaption>词库 · 各词语出现占比的饼图，点扇区即可跳到搜索</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <section class="features band" id="features" aria-labelledby="features-title">
       <div class="section-inner">
-        <p class="section-kicker">功能</p>
-        <h2 id="features-title">给中文写作者的一套本地仪表盘</h2>
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">功能</p>
+            <h2 id="features-title">给中文写作者的一套本地仪表盘</h2>
+          </div>
+          <img class="duck-decor decor-coding" src="assets/duck-coding.svg" alt="" loading="lazy">
+        </div>
         <div class="feature-grid">
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16v-5"/><path d="M13 16V8"/><path d="M18 16v-3"/></svg>
             <h3>上屏汉字统计</h3>
-            <p>直接观察输入法最终提交的中文字符，而不是键盘按键，让中文输入量更接近真实写作产出。</p>
+            <p>直接观察输入法最终提交的中文字符，而不是键盘按键。中文输入量终于接近真实写作产出。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 7v6c0 5 3.5 7.5 8 8 4.5-.5 8-3 8-8V7z"/><path d="m9.5 12 1.8 1.8 3.7-4"/></svg>
             <h3>隐私保护</h3>
-            <p>不记录拼音、英文、数字和普通快捷键；支持跳过密码框、应用黑名单、暂停统计与数据保留期。</p>
+            <p>不记录拼音、英文、数字和普通快捷键。跳过密码框、应用黑名单、暂停统计和保留期都能自己设置。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
             <h3>报告与长图</h3>
-            <p>今日、周、月、年报告会把数字翻译成人话，还能导出分享卡片和包含趋势、洞察、词频的长图。</p>
+            <p>今日、周、月、年报告会把数字翻译成人话，也能导出分享卡片和包含趋势、洞察、词频的长图。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M19 17H6a2 2 0 0 0-2 2"/><path d="M9 7h6"/><path d="M9 11h4"/></svg>
             <h3>关注词与词库</h3>
-            <p>人名、项目代号、口头禅和自定义词库都能被精确计数，适合观察长期主题和表达习惯。</p>
+            <p>人名、项目代号、口头禅和自定义词库都能被精确计数，用来观察长期主题和表达习惯。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13"/><path d="M8 12h13"/><path d="M8 18h13"/><path d="M3 6h.01"/><path d="M3 12h.01"/><path d="M3 18h.01"/></svg>
             <h3>输入序列</h3>
-            <p>按时间线回看真实上屏片段，支持按应用和关键词筛选，也能导出 TXT、CSV 或 JSON 做二次分析。</p>
+            <p>按时间线回看真实上屏片段，按应用和关键词筛选，也能导出 TXT、CSV 或 JSON 做二次分析。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 12 19 5"/><path d="M8 14h8"/></svg>
             <h3>随身鸭</h3>
-            <p>悬浮置顶的小窗，用仪表盘指针实时显示码字速度，配速度曲线、本次会话、今日字数、目标进度和实时时钟，写作时不用打开完整看板，还能用全局热键一键开关。</p>
+            <p>悬浮置顶小窗用指针显示码字速度，配速度曲线、会话字数、今日目标和时钟，写作时不用打开完整看板。</p>
           </article>
           <article class="feature-card">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h10"/><path d="M4 19h7"/><path d="M16 16l3 3 3-3"/><path d="M19 19V9"/></svg>
             <h3>可定制看板与对比</h3>
-            <p>面板可折叠、拖动排序、隐藏，按需组织看板；再加上「对比报告」把任意两个时段并排比较，以及记录打开足迹的「使用历史」。</p>
+            <p>面板可折叠、拖动排序、隐藏；对比报告能并排比较两个时段，使用历史则记录你打开看板和随身鸭的足迹。</p>
           </article>
         </div>
       </div>
@@ -171,7 +210,7 @@
         <div>
           <p class="section-kicker">悬浮小窗</p>
           <h2 id="mini-title">写作时只留一只随身鸭</h2>
-          <p>完整看板适合复盘，随身鸭适合正在写的时候看一眼。它用一只无刻度仪表盘的指针实时显示码字速度，配近一分钟的速度曲线、本次会话、今日字数、目标进度、实时时钟，底部还显示本次已经开了多久；可用全局热键一键开关，关闭后回到主看板。</p>
+          <p>完整看板适合复盘，随身鸭适合正在写的时候看一眼。它用无刻度仪表盘指针显示码字速度，配近一分钟速度曲线、本次会话、今日字数、目标进度和实时时钟；可用全局热键一键开关，关闭后回到主看板。</p>
           <a class="text-link" href="https://github.com/x1324x5/Duck-Type#快速开始" target="_blank" rel="noopener">查看快速开始</a>
         </div>
       </div>
@@ -182,7 +221,7 @@
         <div>
           <p class="section-kicker">开源与未来</p>
           <h2 id="roadmap-title">先做好本地工具，再探索 Pro 能力</h2>
-          <p>核心统计可以继续开源；未来更适合盈利的方向，是高级报告模板、项目维度、专业词库包、本地加密备份和隐私优先的团队自愿打卡。</p>
+          <p>核心统计可以继续开源；未来更适合盈利的方向，是高级报告模板、项目维度、专业词库包、本地加密备份，以及隐私优先的团队自愿打卡。</p>
         </div>
         <div class="roadmap-list">
           <div><span>01</span><p>捕获诊断、新手引导、隐私档案。</p></div>
@@ -194,7 +233,7 @@
 
     <section class="cta band" aria-labelledby="cta-title">
       <div class="section-inner cta-inner">
-        <img src="assets/duck.png" alt="" width="72" height="72">
+        <img src="assets/duck-celebrate.svg" alt="" width="96" height="96">
         <h2 id="cta-title">让小鸭先在托盘里安静待一天</h2>
         <p>等它积累几段真实输入，你会第一次清楚看见自己最近到底写了多少、什么时候最顺、把字都敲进了哪些应用。</p>
         <div class="hero-actions">
@@ -215,5 +254,11 @@
       </div>
     </div>
   </footer>
+  <dialog class="lightbox" id="lightbox" aria-label="截图大图预览">
+    <button class="lightbox-close" type="button" aria-label="关闭大图">×</button>
+    <img id="lightbox-img" alt="">
+    <p id="lightbox-caption"></p>
+  </dialog>
+  <script src="site.js"></script>
 </body>
 </html>
