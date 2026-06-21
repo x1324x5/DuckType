@@ -31,9 +31,16 @@ http://127.0.0.1:8000/
 ├─ .nojekyll
 └─ assets/
    ├─ duck.png
-   ├─ ducktype-dashboard.png
-   └─ mini-counter.png
+   ├─ ducktype-dashboard.png   # 看板（首屏背景 + 真实仪表盘）
+   ├─ shot-fun.png             # 趣味页
+   ├─ shot-report.png          # 报告页
+   ├─ shot-sequence.png        # 输入序列
+   ├─ shot-lexicon.png         # 词库占比
+   ├─ shot-mini.png            # 随身鸭
+   └─ mini-counter.png         # 随身鸭手绘插画
 ```
+
+> 截图均使用应用内置的「演示数据」（虚构语料），不含任何真实输入。
 
 ## 部署到 GitHub Pages
 
