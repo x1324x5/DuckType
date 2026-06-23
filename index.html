@@ -25,6 +25,7 @@
       <a href="#privacy">隐私</a>
       <a href="#faq">问答</a>
       <a href="#roadmap">路线图</a>
+      <a href="en.html" hreflang="en">EN</a>
       <a href="https://github.com/x1324x5/Duck-Type" target="_blank" rel="noopener">GitHub</a>
     </nav>
     <a class="header-action" href="https://github.com/x1324x5/Duck-Type/releases" target="_blank" rel="noopener">
@@ -62,7 +63,7 @@
         <div class="proof-copy">
           <p class="section-kicker">真实仪表盘</p>
           <h2 id="proof-title">把“今天写了多少”变成一眼能读懂的节奏</h2>
-          <p>核心指标、每日趋势、活跃时段、应用分布、高频字词、词性、贡献热力图和完整报告都在同一个本地窗口里。你可以先加载演示数据预览，也可以让它从今天开始安静记录。</p>
+          <p>核心指标、每日趋势、活跃时段、应用分布、高频字词、词性、贡献热力图和完整报告都在同一个本地窗口里。0.3.0 起还多了词汇量成长曲线、各应用打字效率与工作日 / 周末节奏对比；下半部分的面板滚动到时才加载，首屏更快。你可以先加载演示数据预览，也可以让它从今天开始安静记录。</p>
           <img class="duck-decor decor-wave" src="assets/duck-wave.svg" alt="" loading="lazy">
         </div>
         <figure class="screen pop-card">
@@ -130,11 +131,12 @@
         <ul class="info-chips" aria-label="功能速览">
           <li><b>本地优先</b>数据只存在你的电脑</li>
           <li><b>只数上屏</b>不记按键、不记拼音</li>
-          <li><b>新</b>单日回顾</li>
-          <li><b>新</b>记录珍藏</li>
-          <li><b>新</b>日 / 周 / 月目标</li>
-          <li><b>新</b>里程碑通知</li>
-          <li><b>新</b>Markdown 周报</li>
+          <li><b>新</b>词汇量成长曲线</li>
+          <li><b>新</b>各应用打字效率</li>
+          <li><b>新</b>工作日 / 周末节奏</li>
+          <li>单日回顾 · 记录珍藏</li>
+          <li>日 / 周 / 月目标</li>
+          <li>Markdown 周报</li>
           <li>开源 · MIT</li>
         </ul>
         <div class="feature-grid">
@@ -172,6 +174,16 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h10"/><path d="M4 19h7"/><path d="M16 16l3 3 3-3"/><path d="M19 19V9"/></svg>
             <h3>可定制看板与对比</h3>
             <p>面板可折叠、拖动排序、隐藏；对比报告能并排比较两个时段，使用历史则记录你打开看板和随身鸭的足迹。</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg>
+            <h3>词汇量成长 <small>0.3.0</small></h3>
+            <p>把你累计写过的不同词与不同字，按各自第一次出现的日子累加成一条不断上扬的曲线——直观看见词汇量一路变大。</p>
+          </article>
+          <article class="feature-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>
+            <h3>应用效率与节奏 <small>0.3.0</small></h3>
+            <p>各应用里你的平均打字速度排行，加上工作日 vs 周末的日均产出对比——看清自己在哪写得最快、节奏更偏平时还是周末。</p>
           </article>
         </div>
       </div>
@@ -270,8 +282,8 @@
           <p>DuckType 会保持开源、保持本地优先。接下来想继续打磨的，是让复盘更顺手、让回顾更有温度的那些能力——更细的维度、更好的导出、更贴心的引导。</p>
         </div>
         <div class="roadmap-list">
-          <div><span>01</span><p>单日回顾、记录珍藏与里程碑通知（v0.2.9 已上线）。</p></div>
-          <div><span>02</span><p>日 / 周 / 月目标、Markdown 周报导出与新手引导。</p></div>
+          <div><span>01</span><p>单日回顾、记录珍藏、日 / 周 / 月目标与 Markdown 周报（v0.2.9 已上线）。</p></div>
+          <div><span>02</span><p>词汇量成长曲线、各应用效率、工作日 / 周末节奏，看板面板懒加载（v0.3.0 已上线）。</p></div>
           <div><span>03</span><p>项目维度、更多回顾视角与可选的本地加密备份。</p></div>
         </div>
       </div>
@@ -300,7 +312,7 @@
           </details>
           <details>
             <summary>杀毒软件 / SmartScreen 报警怎么办？</summary>
-            <p>安装包目前未做数字签名，Windows SmartScreen 可能提示“未知发布者”。可在提示里选择“更多信息 → 仍要运行”。介意的话，也可以从源码自行构建。</p>
+            <p>安装包目前<b>未做数字签名</b>，Windows SmartScreen 可能弹出“Windows 已保护你的电脑 / 未知发布者”。这不代表有病毒，只是还没买代码签名证书、也还没积累下载声誉。放行：在弹窗里点“<b>更多信息 → 仍要运行</b>”。想再确认文件完整，可用每个 Release 附带的 <b>SHA-256</b> 校验值比对（<code>Get-FileHash .\DuckType.exe -Algorithm SHA256</code>），并只从官方 Releases 页下载。介意的话也可以从源码自行构建。</p>
           </details>
           <details>
             <summary>换电脑后数据能带走吗？</summary>
